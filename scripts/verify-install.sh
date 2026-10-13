@@ -80,12 +80,12 @@ step "取发布产物"
 mkdir -p "$WORK/rel"
 if [ -z "$VERSION" ]; then
     u=$(curl -fsSLI -o /dev/null -w '%{url_effective}' \
-        https://github.com/xsxs89757/chuanyun/releases/latest)
+        https://github.com/leivorn/chuanyun/releases/latest)
     VERSION="${u##*/tag/}"
 fi
 NUM="${VERSION#v}"
 TARBALL="chuanyun-server-$NUM-linux-x86_64.tar.gz"
-BASE="https://github.com/xsxs89757/chuanyun/releases/download/$VERSION"
+BASE="https://github.com/leivorn/chuanyun/releases/download/$VERSION"
 curl -fsSL "$BASE/$TARBALL" -o "$WORK/rel/$TARBALL"
 curl -fsSL "$BASE/SHA256SUMS" -o "$WORK/rel/SHA256SUMS"
 echo "  $VERSION  $TARBALL"

@@ -40,12 +40,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xsxs89757/chuanyun.git",
+    "url": "git+https://github.com/leivorn/chuanyun.git",
     "directory": "integrations/vite-plugin-chuanyun"
   },
-  "homepage": "https://github.com/xsxs89757/chuanyun/tree/main/integrations/vite-plugin-chuanyun",
+  "homepage": "https://github.com/leivorn/chuanyun/tree/main/integrations/vite-plugin-chuanyun",
   "bugs": {
-    "url": "https://github.com/xsxs89757/chuanyun/issues"
+    "url": "https://github.com/leivorn/chuanyun/issues"
   },
   "author": "WangLei",
   "publishConfig": {

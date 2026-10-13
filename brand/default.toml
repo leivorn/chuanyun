@@ -28,4 +28,4 @@ tls_verify = "pin"
 #
 # 内部部署如果不想让客户端连外网，把它指向自己服务端的
 # `/api/client/version`（管理接口已经提供了同样形状的返回）。留空则不检查更新。
-update_url = "https://github.com/xsxs89757/chuanyun"
+update_url = "https://github.com/leivorn/chuanyun"

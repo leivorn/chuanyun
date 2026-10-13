@@ -2,7 +2,7 @@
 #
 # 穿云服务端一键安装。
 #
-#   curl -fsSL https://github.com/xsxs89757/chuanyun/releases/latest/download/install-server.sh \
+#   curl -fsSL https://github.com/leivorn/chuanyun/releases/latest/download/install-server.sh \
 #     | sudo sh -s -- --domain t.example.com
 #
 # 再跑一次就是升级：二进制换新，配置和数据都留着。
@@ -11,7 +11,7 @@
 # Debian 系上它是 dash，bash 那套语法在那里会挂。
 set -eu
 
-REPO="${CHUANYUN_REPO:-xsxs89757/chuanyun}"
+REPO="${CHUANYUN_REPO:-leivorn/chuanyun}"
 BIN_DIR="${CHUANYUN_BIN_DIR:-/usr/local/bin}"
 CONF_DIR=/etc/chuanyun
 CONF="$CONF_DIR/server.toml"

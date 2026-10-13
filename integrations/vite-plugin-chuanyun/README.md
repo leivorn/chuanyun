@@ -1,8 +1,8 @@
 # vite-plugin-chuanyun
 
-[English](README.md) · [中文](https://github.com/xsxs89757/chuanyun/blob/main/integrations/vite-plugin-chuanyun/GUIDE.zh-CN.md)
+[English](README.md) · [中文](https://github.com/leivorn/chuanyun/blob/main/integrations/vite-plugin-chuanyun/GUIDE.zh-CN.md)
 
-Expose a Vite dev server through a [chuanyun](https://github.com/xsxs89757/chuanyun) tunnel,
+Expose a Vite dev server through a [chuanyun](https://github.com/leivorn/chuanyun) tunnel,
 automatically.
 
 ## Install
@@ -25,13 +25,13 @@ yarn add -D vite-plugin-chuanyun
 pnpm can install straight from a subdirectory of the repo:
 
 ```bash
-pnpm add -D "github:xsxs89757/chuanyun#path:/integrations/vite-plugin-chuanyun"
+pnpm add -D "github:leivorn/chuanyun#path:/integrations/vite-plugin-chuanyun"
 ```
 
 npm and yarn don't support subdirectories, so build a tarball first:
 
 ```bash
-git clone https://github.com/xsxs89757/chuanyun.git
+git clone https://github.com/leivorn/chuanyun.git
 cd chuanyun/integrations/vite-plugin-chuanyun
 npm install && npm pack        # produces vite-plugin-chuanyun-x.y.z.tgz
 
@@ -92,7 +92,7 @@ plugins: [chuanyun({ enabled: !process.env.CI })]
 
 ## Requirements
 
-The [chuanyun desktop client](https://github.com/xsxs89757/chuanyun) must be installed and
+The [chuanyun desktop client](https://github.com/leivorn/chuanyun) must be installed and
 logged in on the same machine.
 
 **If it isn't, nothing breaks.** The plugin prints one line and gets out of the way; the dev

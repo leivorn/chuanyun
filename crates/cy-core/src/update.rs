@@ -200,11 +200,11 @@ mod tests {
     #[test]
     fn repo_home_page_is_turned_into_an_api_url() {
         // 用户会顺手复制仓库主页地址，别让他们再去查 API 路径
-        let expected = "https://api.github.com/repos/xsxs89757/chuanyun/releases/latest";
+        let expected = "https://api.github.com/repos/leivorn/chuanyun/releases/latest";
         for input in [
-            "https://github.com/xsxs89757/chuanyun",
-            "https://github.com/xsxs89757/chuanyun/",
-            "https://github.com/xsxs89757/chuanyun/releases",
+            "https://github.com/leivorn/chuanyun",
+            "https://github.com/leivorn/chuanyun/",
+            "https://github.com/leivorn/chuanyun/releases",
         ] {
             assert_eq!(api_url(input), expected, "输入：{input}");
         }

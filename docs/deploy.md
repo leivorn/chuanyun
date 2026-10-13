@@ -20,7 +20,7 @@ production site, problems don't spill over, and cookies don't leak between them.
 ## One command
 
 ```bash
-curl -fsSL https://github.com/xsxs89757/chuanyun/releases/latest/download/install-server.sh \
+curl -fsSL https://github.com/leivorn/chuanyun/releases/latest/download/install-server.sh \
   | sudo sh -s -- --domain t.example.com
 ```
 
@@ -65,9 +65,9 @@ connectivity, copy them over, and point the script at them.
 ```bash
 # On a machine with working GitHub access
 VER=0.1.0
-curl -fLO https://github.com/xsxs89757/chuanyun/releases/download/v$VER/chuanyun-server-$VER-linux-x86_64.tar.gz
-curl -fLO https://github.com/xsxs89757/chuanyun/releases/download/v$VER/SHA256SUMS
-curl -fLO https://github.com/xsxs89757/chuanyun/releases/download/v$VER/install-server.sh
+curl -fLO https://github.com/leivorn/chuanyun/releases/download/v$VER/chuanyun-server-$VER-linux-x86_64.tar.gz
+curl -fLO https://github.com/leivorn/chuanyun/releases/download/v$VER/SHA256SUMS
+curl -fLO https://github.com/leivorn/chuanyun/releases/download/v$VER/install-server.sh
 scp chuanyun-server-$VER-linux-x86_64.tar.gz SHA256SUMS install-server.sh root@server:/tmp/
 
 # On the server
@@ -217,7 +217,7 @@ journalctl -u chuanyun-server -f      # logs
 Run the same install command again. Config and data are left alone:
 
 ```bash
-curl -fsSL https://github.com/xsxs89757/chuanyun/releases/latest/download/install-server.sh | sudo sh
+curl -fsSL https://github.com/leivorn/chuanyun/releases/latest/download/install-server.sh | sudo sh
 ```
 
 No `--domain` needed on an upgrade — the config already has it. Tunnels blip for a couple of
@@ -226,7 +226,7 @@ seconds while the service restarts, then clients reconnect on their own. Address
 ## Uninstalling
 
 ```bash
-curl -fsSL https://github.com/xsxs89757/chuanyun/releases/latest/download/install-server.sh | sudo sh -s -- --uninstall
+curl -fsSL https://github.com/leivorn/chuanyun/releases/latest/download/install-server.sh | sudo sh -s -- --uninstall
 ```
 
 Stops and removes the service and deletes the binary. **Config and data are deliberately
@@ -244,8 +244,8 @@ If you'd rather not use the script, or the machine has no systemd:
 ```bash
 # 1. Download and verify
 VER=0.1.0
-curl -fLO https://github.com/xsxs89757/chuanyun/releases/download/v$VER/chuanyun-server-$VER-linux-x86_64.tar.gz
-curl -fLO https://github.com/xsxs89757/chuanyun/releases/download/v$VER/SHA256SUMS
+curl -fLO https://github.com/leivorn/chuanyun/releases/download/v$VER/chuanyun-server-$VER-linux-x86_64.tar.gz
+curl -fLO https://github.com/leivorn/chuanyun/releases/download/v$VER/SHA256SUMS
 sha256sum -c SHA256SUMS --ignore-missing
 tar xzf chuanyun-server-$VER-linux-x86_64.tar.gz
 

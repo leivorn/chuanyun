@@ -2,7 +2,7 @@
 
 [English](README.md) · [中文](GUIDE.zh-CN.md)
 
-把 Vite 的 dev server 自动接进[穿云](https://github.com/xsxs89757/chuanyun)隧道。
+把 Vite 的 dev server 自动接进[穿云](https://github.com/leivorn/chuanyun)隧道。
 
 ## 安装
 
@@ -24,13 +24,13 @@ yarn add -D vite-plugin-chuanyun
 pnpm 支持从仓库子目录直接装：
 
 ```bash
-pnpm add -D "github:xsxs89757/chuanyun#path:/integrations/vite-plugin-chuanyun"
+pnpm add -D "github:leivorn/chuanyun#path:/integrations/vite-plugin-chuanyun"
 ```
 
 npm 和 yarn 不支持子目录，得先打个包：
 
 ```bash
-git clone https://github.com/xsxs89757/chuanyun.git
+git clone https://github.com/leivorn/chuanyun.git
 cd chuanyun/integrations/vite-plugin-chuanyun
 npm install && npm pack        # 得到 vite-plugin-chuanyun-x.y.z.tgz
 
@@ -89,7 +89,7 @@ plugins: [chuanyun({ enabled: !process.env.CI })]
 
 ## 前提
 
-需要本机装着并登录了[穿云客户端](https://github.com/xsxs89757/chuanyun)。
+需要本机装着并登录了[穿云客户端](https://github.com/leivorn/chuanyun)。
 
 **没装或没登录也不影响**——插件打一行提示就让路，dev server 照常启动，
 `localhost` 照常能用。一个可选功能不该让本地开发起不来，所以连不上、超时、

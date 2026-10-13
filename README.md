@@ -55,7 +55,7 @@ log in, open a tunnel.
 ### Server (Linux, x86_64)
 
 ```bash
-curl -fsSL https://github.com/xsxs89757/chuanyun/releases/latest/download/install-server.sh \
+curl -fsSL https://github.com/leivorn/chuanyun/releases/latest/download/install-server.sh \
   | sudo sh -s -- --domain t.example.com
 ```
 
@@ -103,7 +103,7 @@ code-signed**, so the first launch needs one extra step per machine:
 ## Try it without a server
 
 ```bash
-git clone https://github.com/xsxs89757/chuanyun.git && cd chuanyun
+git clone https://github.com/leivorn/chuanyun.git && cd chuanyun
 ./scripts/demo.sh
 ```
 

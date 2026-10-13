@@ -39,7 +39,7 @@
 一条命令：
 
 ```bash
-curl -fsSL https://github.com/xsxs89757/chuanyun/releases/latest/download/install-server.sh \
+curl -fsSL https://github.com/leivorn/chuanyun/releases/latest/download/install-server.sh \
   | sudo sh -s -- --domain t.example.com
 ```
 
@@ -85,7 +85,7 @@ chuanyun-server status               # 谁在线、几条隧道
 ## 没有服务器也能先看看
 
 ```bash
-git clone https://github.com/xsxs89757/chuanyun.git && cd chuanyun
+git clone https://github.com/leivorn/chuanyun.git && cd chuanyun
 ./scripts/demo.sh
 ```
 

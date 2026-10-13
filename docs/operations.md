@@ -74,7 +74,7 @@ curl -s localhost:<admin-port>/audit
 Re-running the install command is the upgrade. Config and data are untouched:
 
 ```bash
-curl -fsSL https://github.com/xsxs89757/chuanyun/releases/latest/download/install-server.sh | sudo sh
+curl -fsSL https://github.com/leivorn/chuanyun/releases/latest/download/install-server.sh | sudo sh
 ```
 
 Tunnels blip for a couple of seconds while the service restarts, then clients reconnect on
@@ -86,7 +86,7 @@ connectivity is good and copy them over:
 ```bash
 # somewhere with working GitHub access
 VER=0.1.4
-B=https://github.com/xsxs89757/chuanyun/releases/download/v$VER
+B=https://github.com/leivorn/chuanyun/releases/download/v$VER
 for f in chuanyun-server-$VER-linux-x86_64.tar.gz SHA256SUMS install-server.sh; do
     curl -fLO $B/$f
 done
@@ -247,7 +247,7 @@ curl -s localhost:<admin-port>/audit | python3 -m json.tool
 ## Uninstalling
 
 ```bash
-curl -fsSL https://github.com/xsxs89757/chuanyun/releases/latest/download/install-server.sh \
+curl -fsSL https://github.com/leivorn/chuanyun/releases/latest/download/install-server.sh \
   | sudo sh -s -- --uninstall
 ```
 

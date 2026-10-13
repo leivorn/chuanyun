@@ -1,6 +1,6 @@
 [Unit]
 Description=穿云内网穿透服务端
-Documentation=https://github.com/xsxs89757/chuanyun
+Documentation=https://github.com/leivorn/chuanyun
 After=network-online.target
 Wants=network-online.target
 
